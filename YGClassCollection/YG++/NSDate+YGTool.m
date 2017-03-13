@@ -15,19 +15,19 @@ NSString *const YGDateFormatStr_1 = @"yyyy-MM-dd";
 ///yyyy年MM月dd日
 NSString *const YGDateFormatStr_2 = @"yyyy年MM月dd日";
 ///yyyy-MM-dd H:m:s
-NSString *const YGDateFormatStr_3 = @"yyyy-MM-dd H:m:s";
+NSString *const YGDateFormatStr_3 = @"yyyy-MM-dd HH:mm:ss";
 ///yyyy年MM月dd日 H:m:s
-NSString *const YGDateFormatStr_4 = @"yyyy年MM月dd日 H:m:s";
+NSString *const YGDateFormatStr_4 = @"yyyy年MM月dd日 HH:mm:ss";
 ///yyyy年MM月dd日 H点m分s秒
-NSString *const YGDateFormatStr_5 = @"yyyy年MM月dd日 H点m分s秒";
+NSString *const YGDateFormatStr_5 = @"yyyy年MM月dd日 HH点mm分ss秒";
 ///yyyy-MM-dd 星期E
 NSString *const YGDateFormatStr_6 = @"yyyy-MM-dd 星期E";
 ///yyyy年MM月dd日 星期E
 NSString *const YGDateFormatStr_7 = @"yyyy年MM月dd日 星期E";
 ///yyyy-MM-dd 星期E H:m:s
-NSString *const YGDateFormatStr_8 = @"yyyy-MM-dd 星期E H:m:s";
+NSString *const YGDateFormatStr_8 = @"yyyy-MM-dd 星期E HH:mm:ss";
 ///yyyy年MM月dd日 星期E H点m分s秒
-NSString *const YGDateFormatStr_9 = @"yyyy年MM月dd日 星期E H点m分s秒";
+NSString *const YGDateFormatStr_9 = @"yyyy年MM月dd日 星期E HH点mm分ss秒";
 
 @implementation NSDate (YGTool)
 
