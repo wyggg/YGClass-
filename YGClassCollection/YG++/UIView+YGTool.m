@@ -71,6 +71,15 @@
     return results;
 }
 
+- (NSArray <UIView *>*)allSuperViews{
+    NSMutableArray *array = [NSMutableArray array];
+    if (self.superview) {
+        [array addObject:self.superview];
+        [array addObjectsFromArray:[self.superview allSuperViews]];
+    }
+    return array;
+}
+
 //获得当前view的所在的ViewController
 - (UIViewController *)viewController{
     UIResponder *nextResponder =  self;

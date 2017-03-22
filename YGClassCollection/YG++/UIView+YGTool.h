@@ -15,6 +15,9 @@
 ///获得当前View所有层级的子视图 所有视图的指针都可以找到
 @property (nonatomic, weak, readonly) NSArray *allSubviews;
 
+///获得当前View所有父视图 包括父视图的父视图
+@property (nonatomic, weak, readonly) NSArray <UIView *>*allSuperViews;
+
 ///获得当前view的所在的ViewController
 @property (nonatomic, weak, readonly) UIViewController *viewController;
 
