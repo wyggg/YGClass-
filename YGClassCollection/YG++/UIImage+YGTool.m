@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+YGTool.h"
-#import "UIColor+YGTool.h"
+#import <ImageIO/ImageIO.h>
 
 @implementation UIImage (YGTool)
 
@@ -15,6 +15,61 @@
 ///从本地加载图片
 + (UIImage *)imageWithFilePath:(NSString *)filePath{
     return [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:filePath ofType:nil]];
+}
+
+///根据data创建动图对象
++ (UIImage *)GIFImageWithData:(NSData *)data{
+    if (!data) {
+        return nil;
+    }
+    
+    CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
+    size_t imageCount = CGImageSourceGetCount(imageSource);
+    if (imageCount <= 1) {
+        return [UIImage imageWithData:data];
+    }
+    NSMutableArray *images = [NSMutableArray array];
+    NSTimeInterval duration = 0.0f;
+    for (size_t i = 0; i < imageCount; i++) {
+        CGImageRef imageRef = CGImageSourceCreateImageAtIndex(imageSource, i, NULL);
+        if (!imageRef) {
+            continue;
+        }
+        duration += [self frameDurationAtIndex:i source:imageSource];
+        [images addObject:[UIImage imageWithCGImage:imageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
+        CGImageRelease(imageRef);
+    }
+    if (!duration) {
+        duration = (1.0f / 10.0f) * imageCount;
+    }
+    CFRelease(imageSource);
+    
+    return [UIImage animatedImageWithImages:images duration:duration];
+}
+
++ (float)frameDurationAtIndex:(NSUInteger)index source:(CGImageSourceRef)source {
+    float frameDuration = 0.1f;
+    CFDictionaryRef cfFrameProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil);
+    NSDictionary *frameProperties = (__bridge NSDictionary *)cfFrameProperties;
+    NSDictionary *gifProperties = frameProperties[(NSString *)kCGImagePropertyGIFDictionary];
+    
+    NSNumber *delayTimeUnclampedProp = gifProperties[(NSString *)kCGImagePropertyGIFUnclampedDelayTime];
+    if (delayTimeUnclampedProp) {
+        frameDuration = [delayTimeUnclampedProp floatValue];
+    }
+    else {
+        
+        NSNumber *delayTimeProp = gifProperties[(NSString *)kCGImagePropertyGIFDelayTime];
+        if (delayTimeProp) {
+            frameDuration = [delayTimeProp floatValue];
+        }
+    }
+    if (frameDuration < 0.011f) {
+        frameDuration = 0.100f;
+    }
+    
+    CFRelease(cfFrameProperties);
+    return frameDuration;
 }
 
 ///根据Color创建Image
@@ -63,11 +118,6 @@
 //保存图片到相册 action:回调方法
 - (void)saveImageToPhotos:(id)target action:(SEL)action{
     UIImageWriteToSavedPhotosAlbum(self, target, action, nil);
-}
-
-//图片主题色
-- (UIColor*)mostColor{
-    return [UIColor colorWithImageTheme:self];
 }
 
 //把图片渲染成黑白色

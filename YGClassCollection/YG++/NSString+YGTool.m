@@ -281,6 +281,21 @@
 
 @end
 
+///富文本工具类
+@implementation NSString (HTMLTool)
+
+NSString *const HTMLTool_cssCodePhoneA = @".duanluo{font-size:15px;color:#333333;text-align:left;margin:10px;}img{width: 100%;height: auto;}";
+
+///为HTML字符片段添加css布局代码
+- (NSString *)addCSSCode:(NSString *)cssCode title:(NSString *)title charset:(NSString *)charset{
+    
+    charset = charset.length==0?@"UTF-8":charset;
+    
+    return [NSString stringWithFormat:@"<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"%@\"><title>%@</title><link rel=\"stylesheet\" href=\"mui.min.css\"><style>%@</style></head><body>%@</body></html>",charset,title,cssCode,self];
+}
+
+@end
+
 
 @implementation NSNull (nullString)
 

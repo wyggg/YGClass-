@@ -19,6 +19,9 @@ typedef void (^ActionBlock)(UIButton *sender); //按钮点击事件
 - (void)addTargetInBlockEvents:(UIControlEvents)events block:(ActionBlock)block;
 
 ///扩大按钮点击范围
-- (void)setEnlargeEdgeWithTop:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom left:(CGFloat)left;
+- (void)setEnlargeEdgeWithTop:(CGFloat)top
+                        right:(CGFloat)right
+                       bottom:(CGFloat)bottom
+                         left:(CGFloat)left;
 
 @end

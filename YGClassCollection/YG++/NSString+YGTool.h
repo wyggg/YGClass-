@@ -79,6 +79,18 @@
 
 @end
 
+///富文本工具类
+@interface NSString (HTMLTool)
+
+///适合手机端的布局A 图文展示
+extern NSString *const HTMLTool_cssCodePhoneA;
+
+///为HTML字符片段添加css布局代码 cssCode:布局代码  title：标题   charset：字符集 （传空默认 UTF-8）
+- (NSString *)addCSSCode:(NSString *)cssCode title:(NSString *)title charset:(NSString *)charset;
+
+
+@end
+
 //空对象安全处理
 @interface NSNull (nullString)
 

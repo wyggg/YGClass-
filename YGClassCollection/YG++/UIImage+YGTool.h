@@ -11,14 +11,14 @@
 
 @interface UIImage (YGTool)
 
-///图片主题色
-@property (nonatomic, assign, readonly) UIColor *mostColor;
-
 ///图片去彩色
 @property (nonatomic, assign, readonly) UIImage *grayImage;
 
 ///从本地加载图片
 + (UIImage *)imageWithFilePath:(NSString *)filePath;
+
+///根据data创建GIF动图
++ (UIImage *)GIFImageWithData:(NSData *)data;
 
 ///根据Color创建一个1*1的Image
 + (UIImage *)imageWithColor:(UIColor *)color;
