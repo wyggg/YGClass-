@@ -22,13 +22,13 @@
     
     UIButton *button = [[UIButton alloc] init];
     [button setTitle:@"按钮重复点击测试" forState:0];
-    button.acceptEventInterval = 2;
+    button.acceptEventInterval = 1;
     [self.view addSubview:button];
     [button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.offset(0);
     }];
     [button addTargetInBlockEvents:UIControlEventTouchUpInside block:^(UIButton *sender) {
-        NSLog(@"哈哈哈");
+        NSLog(@"%@",[NSDate dateStringByUnixTimeStamp:[NSDate date].timeIntervalSince1970 formatStr:YGDateFormatStr_4]);
     }];
     
 //    [self.view addBottomDottedLineLintH:1 color:[UIColor redColor] lengths:@"5,2" left:10 right:10 bottom:10];

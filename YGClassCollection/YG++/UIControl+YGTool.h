@@ -10,10 +10,7 @@
 
 @interface UIControl (YGTool)
 
-///设置按钮点击间隔时间（未完成）
+///设置按钮点击间隔时间
 @property (nonatomic, assign) NSTimeInterval acceptEventInterval;
-
-///注册acceptEventInterval属性 否则将不可用
-+ (void)registeredAcceptEventInterval;
 
 @end

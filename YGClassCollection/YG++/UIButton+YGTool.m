@@ -42,7 +42,6 @@ static char overviewKey;
     if (block) {
         block(sender);
     }
-   // /Users/ioskaifa/Library/Containers/com.tencent.qq/Data/Library/Caches/Images/081CD02846DE7FF9DB4AEE6C2D1EEEED.jpg
 }
 
 #pragma mark - 扩大按钮点击范围

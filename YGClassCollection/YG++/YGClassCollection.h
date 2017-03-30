@@ -34,7 +34,7 @@
 
 //快速定义弱引用的self指针
 #define K_WEAK_SELF(PointerName) __weak typeof(self) PointerName = self;
-#define K_WEAK_SELF_aSelf K_WEAK_SELF(aSelf)
+#define K_WEAK_SELF_aSelf K_WEAK_SELF(aSelf);
 
 //由角度获取弧度 有弧度获取角度
 #define kDegreesToRadian(x) (M_PI * (x) / 180.0)
