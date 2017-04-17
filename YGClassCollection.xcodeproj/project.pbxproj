@@ -56,6 +56,7 @@
 		D5B1D22C1D62D7FD0081B847 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D21F1D62D7FD0081B847 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D5B1D22D1D62D7FD0081B847 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D2211D62D7FD0081B847 /* View+MASAdditions.m */; };
 		D5B1D22E1D62D7FD0081B847 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D2241D62D7FD0081B847 /* ViewController+MASAdditions.m */; };
+		D5B5821C1EA4BAED00ABB09A /* YGPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B5821B1EA4BAED00ABB09A /* YGPagesView.m */; };
 		D5E2EC851D89271F0055512B /* YGView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E2EC841D89271F0055512B /* YGView.xib */; };
 		D5E7CC201D7FE79100F00676 /* YGObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E7CC1F1D7FE79100F00676 /* YGObjectModel.m */; };
 		D5E7CC231D7FEE8A00F00676 /* YGObjectModelTow.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E7CC221D7FEE8A00F00676 /* YGObjectModelTow.m */; };
@@ -162,6 +163,8 @@
 		D5B1D2221D62D7FD0081B847 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		D5B1D2231D62D7FD0081B847 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		D5B1D2241D62D7FD0081B847 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D5B5821A1EA4BAED00ABB09A /* YGPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGPagesView.h; sourceTree = "<group>"; };
+		D5B5821B1EA4BAED00ABB09A /* YGPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGPagesView.m; sourceTree = "<group>"; };
 		D5E2EC841D89271F0055512B /* YGView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YGView.xib; sourceTree = "<group>"; };
 		D5E7CC1E1D7FE79100F00676 /* YGObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGObjectModel.h; sourceTree = "<group>"; };
 		D5E7CC1F1D7FE79100F00676 /* YGObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGObjectModel.m; sourceTree = "<group>"; };
@@ -287,6 +290,7 @@
 				D5E7CC211D7FEE8A00F00676 /* YGObjectModelTow.h */,
 				D5E7CC221D7FEE8A00F00676 /* YGObjectModelTow.m */,
 				D5501EC31D953188006A245C /* YG++ */,
+				D5B582181EA4BAED00ABB09A /* UI++ */,
 				D5B1D20A1D62D7DE0081B847 /* Lib */,
 				D5E2EC841D89271F0055512B /* YGView.xib */,
 				D5B1D1F91D62BCF50081B847 /* Main.storyboard */,
@@ -309,8 +313,8 @@
 		D5B1D20A1D62D7DE0081B847 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				D55B93C91E8B4E2600829E9A /* SDWebImage */,
 				D51F19B61D86A2D400E37223 /* Accelerate.framework */,
+				D55B93C91E8B4E2600829E9A /* SDWebImage */,
 				D5B1D20B1D62D7FD0081B847 /* Masonry */,
 			);
 			path = Lib;
@@ -346,6 +350,23 @@
 				D5B1D2241D62D7FD0081B847 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		D5B582181EA4BAED00ABB09A /* UI++ */ = {
+			isa = PBXGroup;
+			children = (
+				D5B582191EA4BAED00ABB09A /* YGPagesView */,
+			);
+			path = "UI++";
+			sourceTree = "<group>";
+		};
+		D5B582191EA4BAED00ABB09A /* YGPagesView */ = {
+			isa = PBXGroup;
+			children = (
+				D5B5821A1EA4BAED00ABB09A /* YGPagesView.h */,
+				D5B5821B1EA4BAED00ABB09A /* YGPagesView.m */,
+			);
+			path = YGPagesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +468,7 @@
 				D5B1D22D1D62D7FD0081B847 /* View+MASAdditions.m in Sources */,
 				D55B93FC1E8B4E2700829E9A /* UIView+WebCache.m in Sources */,
 				D5501EFE1D953360006A245C /* UIColor+YGTool.m in Sources */,
+				D5B5821C1EA4BAED00ABB09A /* YGPagesView.m in Sources */,
 				D5B1D1F51D62BCF50081B847 /* AppDelegate.m in Sources */,
 				D55B93FB1E8B4E2700829E9A /* UIImageView+WebCache.m in Sources */,
 				D55B93F71E8B4E2700829E9A /* UIButton+WebCache.m in Sources */,
