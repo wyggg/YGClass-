@@ -140,5 +140,10 @@
     return [self colorWithHexString:color alpha:1.0f];
 }
 
+- (UIColor *)transparentColor:(CGFloat)transparent{
+    const CGFloat *components = CGColorGetComponents(self.CGColor);
+    return [UIColor colorWithRed:components[0] green:components[1] blue:components[2] alpha:transparent];
+}
+
 
 @end
