@@ -39,6 +39,7 @@
 		D55B93FC1E8B4E2700829E9A /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D55B93EA1E8B4E2700829E9A /* UIView+WebCache.m */; };
 		D55B93FD1E8B4E2700829E9A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D55B93EC1E8B4E2700829E9A /* UIView+WebCacheOperation.m */; };
 		D57F204A1E713F400058F465 /* WKWebView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D57F20491E713F400058F465 /* WKWebView+YGTool.m */; };
+		D582D0311EDE657100140746 /* iSuperScrollElves.m in Sources */ = {isa = PBXBuildFile; fileRef = D582D0301EDE657100140746 /* iSuperScrollElves.m */; };
 		D587DCB61E24C5B70009B8F5 /* UIControl+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D587DCB51E24C5B70009B8F5 /* UIControl+YGTool.m */; };
 		D5B1D1F21D62BCF50081B847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D1F11D62BCF50081B847 /* main.m */; };
 		D5B1D1F51D62BCF50081B847 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B1D1F41D62BCF50081B847 /* AppDelegate.m */; };
@@ -126,6 +127,8 @@
 		D55B93EC1E8B4E2700829E9A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		D57F20481E713F400058F465 /* WKWebView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+YGTool.h"; sourceTree = "<group>"; };
 		D57F20491E713F400058F465 /* WKWebView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+YGTool.m"; sourceTree = "<group>"; };
+		D582D02F1EDE657100140746 /* iSuperScrollElves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSuperScrollElves.h; sourceTree = "<group>"; };
+		D582D0301EDE657100140746 /* iSuperScrollElves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSuperScrollElves.m; sourceTree = "<group>"; };
 		D587DCB41E24C5B70009B8F5 /* UIControl+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YGTool.h"; sourceTree = "<group>"; };
 		D587DCB51E24C5B70009B8F5 /* UIControl+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YGTool.m"; sourceTree = "<group>"; };
 		D5B1D1ED1D62BCF50081B847 /* YGClassCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YGClassCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,6 +263,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		D582D02E1EDE657100140746 /* iSuperScrollElvesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D582D02F1EDE657100140746 /* iSuperScrollElves.h */,
+				D582D0301EDE657100140746 /* iSuperScrollElves.m */,
+			);
+			path = iSuperScrollElvesDemo;
+			sourceTree = "<group>";
+		};
 		D5B1D1E41D62BCF50081B847 = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +367,7 @@
 		D5B582181EA4BAED00ABB09A /* UI++ */ = {
 			isa = PBXGroup;
 			children = (
+				D582D02E1EDE657100140746 /* iSuperScrollElvesDemo */,
 				D5B582191EA4BAED00ABB09A /* YGPagesView */,
 			);
 			path = "UI++";
@@ -479,6 +492,7 @@
 				D5501EF91D953360006A245C /* NSDate+YGTool.m in Sources */,
 				D55B93F11E8B4E2700829E9A /* SDWebImageCompat.m in Sources */,
 				D5B1D2251D62D7FD0081B847 /* MASCompositeConstraint.m in Sources */,
+				D582D0311EDE657100140746 /* iSuperScrollElves.m in Sources */,
 				D55B93F21E8B4E2700829E9A /* SDWebImageDecoder.m in Sources */,
 				D57F204A1E713F400058F465 /* WKWebView+YGTool.m in Sources */,
 				D5501EFA1D953360006A245C /* NSObject+YGTool.m in Sources */,
