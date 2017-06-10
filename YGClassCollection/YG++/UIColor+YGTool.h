@@ -10,6 +10,8 @@
 
 @interface UIColor (YGTool)
 
+@property (nonatomic, readonly) NSDictionary *colorRGB;
+
 #pragma mark - 颜色扩展
 
 ///随机色
@@ -26,9 +28,13 @@
 //从十六进制字符串获取颜色，
 + (UIColor *)colorWithHexString:(NSString *)color;
 
-
 //color:支持@“#123456”、 @“0X123456”、 @“123456”三种格式
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+
+//修改透明度
+- (UIColor *)transparentColor:(CGFloat)transparent;
+//获得颜色RGB的值
+- (NSDictionary *)colorRGB;
 
 
 @end

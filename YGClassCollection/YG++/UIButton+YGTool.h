@@ -13,10 +13,12 @@ typedef void (^ActionBlock)(UIButton *sender); //按钮点击事件
 @interface UIButton (YGTool)
 
 ///设置纯色背景图片
-- (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
+- (void)setBackgroundColor:(UIColor *)backgroundColor
+                  forState:(UIControlState)state;
 
 ///添加点击事件 Block回调
-- (void)addTargetInBlockEvents:(UIControlEvents)events block:(ActionBlock)block;
+- (void)addTargetInBlockEvents:(UIControlEvents)events
+                         block:(ActionBlock)block;
 
 ///扩大按钮点击范围
 - (void)setEnlargeEdgeWithTop:(CGFloat)top
