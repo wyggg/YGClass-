@@ -58,6 +58,27 @@
     return obj;
 }
 
+///数据格式转换为XML字符串
+- (NSString *)xmlString{
+    
+    NSDictionary *dic = [self jsonObject];
+    if (![dic isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"xml转换对象必须为字典");
+        return nil;
+    }
+    
+    NSString *xmlStr = @"<xml>";
+    for (NSString *key in dic.allKeys) {
+        
+        NSString *value = [dic objectForKey:key];
+        xmlStr = [xmlStr stringByAppendingString:[NSString stringWithFormat:@"<%@>%@</%@>", key, value, key]];
+    }
+    
+    xmlStr = [xmlStr stringByAppendingString:@"</xml>"];
+    return xmlStr;
+
+}
+
 - (NSString *)formatString{
     if ([self isNullObject]) {
         return @"";
@@ -95,6 +116,78 @@
     }
     
     return objArray;
+}
+
+///正序冒泡
+- (NSMutableArray *)sortASWithKey:(NSString *)key {
+    if ([self isKindOfClass:[NSArray class]] == NO) {
+        return nil;
+    }
+    //如果是可变数组（自身排序）
+    NSMutableArray *sortArray;
+    if ([self isKindOfClass:[NSMutableArray class]]) {
+        sortArray = (NSMutableArray *)self;
+    } else {
+        sortArray = [NSMutableArray arrayWithArray:(NSArray *)self];
+    }
+    //正序冒泡算法
+    NSInteger count = sortArray.count;
+    for (int i = 0; i < count; i++) {
+        BOOL isHaveExchange = NO;
+        for (int j = 0; j < count - 1 - i; j++) {
+            id obj = sortArray[j];
+            id value = [obj valueForKeyPath:key];
+            float num = [value floatValue];
+            
+            id nextObj = sortArray[j+1];
+            id nextValue = [nextObj valueForKeyPath:key];
+            float nextNum = [nextValue floatValue];
+            if (num > nextNum) {
+                [sortArray exchangeObjectAtIndex:j withObjectAtIndex:j+1];
+                isHaveExchange = YES;
+            }
+        }
+        if (!isHaveExchange) {
+            break;
+        }
+    }
+    return sortArray;
+}
+
+///反序冒泡
+- (NSMutableArray *)sortDesWithKey:(NSString *)key {
+    if ([self isKindOfClass:[NSArray class]] == NO) {
+        return nil;
+    }
+    //如果是可变数组（自身排序）
+    NSMutableArray *sortArray;
+    if ([self isKindOfClass:[NSMutableArray class]]) {
+        sortArray = (NSMutableArray *)self;
+    } else {
+        sortArray = [NSMutableArray arrayWithArray:(NSArray *)self];
+    }
+    //倒序冒泡算法
+    NSInteger count = sortArray.count;
+    for (int i = 0; i < count; i++) {
+        BOOL isHaveExchange = NO;
+        for (int j = 0; j < count - 1 - i; j++) {
+            id obj = sortArray[j];
+            id value = [obj valueForKeyPath:key];
+            float num = [value floatValue];
+            
+            id nextObj = sortArray[j+1];
+            id nextValue = [nextObj valueForKeyPath:key];
+            float nextNum = [nextValue floatValue];
+            if (num < nextNum) {
+                [sortArray exchangeObjectAtIndex:j withObjectAtIndex:j+1];
+                isHaveExchange = YES;
+            }
+        }
+        if (!isHaveExchange) {
+            break;
+        }
+    }
+    return sortArray;
 }
 
 #pragma mark - 判断

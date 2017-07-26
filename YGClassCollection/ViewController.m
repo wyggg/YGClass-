@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YGClassCollection.h"
 #import <objc/runtime.h>
+#import <objc/objc.h>
 #import "YGObjectModel.h"
 
 @interface ViewController ()
@@ -26,6 +27,13 @@
     dispatch_once(&onceToken, ^{
         
     });
+    
+    NSDictionary *dic = @{@"key1":@"111",
+                          @"key2":@"222",
+                          @"key3":@"333",
+                          @"key4":@"444",};
+    
+    NSLog(@"%@",[[dic xmlString] jsonData]);
     
 //    UIButton *button = [[UIButton alloc] init];
 //    [button setTitle:@"按钮重复点击测试" forState:0];

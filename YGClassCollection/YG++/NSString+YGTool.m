@@ -8,6 +8,10 @@
 
 #import "NSString+YGTool.h"
 
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonHMAC.h>
+#import <CommonCrypto/CommonCryptor.h>
+
 @implementation NSString (YGTool)
 
 ///转换成url
@@ -27,6 +31,37 @@
 - (NSData *)dataUTF8{
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
+
+///Base64编码
+- (NSString *)base64Encode{
+    if ([self isNullString]) {
+        return nil;
+    }
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [data base64EncodedStringWithOptions:0];
+}
+
+///Base64解码
+- (NSString *)base64Decode{
+    if ([self isNullString]) {
+        return nil;
+    }
+    NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:0];
+    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+///MD5加密
+- (NSString *)md5String{
+    const char *cStr = [self UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(cStr, (uint32_t)strlen(cStr), result);
+    return [NSString stringWithFormat:
+            @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
+            result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],
+            result[8], result[9], result[10], result[11], result[12], result[13], result[14], result[15]
+            ];
+}
+
 
 ///是否为空
 - (BOOL)isNullString{

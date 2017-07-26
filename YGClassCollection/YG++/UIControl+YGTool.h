@@ -10,7 +10,7 @@
 
 @interface UIControl (YGTool)
 
-///设置按钮点击间隔时间
+///设置按钮点击冷却时间
 @property (nonatomic, assign) NSTimeInterval acceptEventInterval;
 
 @end

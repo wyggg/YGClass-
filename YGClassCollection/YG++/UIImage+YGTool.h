@@ -38,7 +38,7 @@
 ///模糊处理图片 fuzzy:模糊程度 0-1
 - (UIImage *)imageFuzzy:(CGFloat)fuzzy;
 
-///模糊处理图片（子线程运行） fuzzy:模糊程度 0-1
+///模糊处理图片（异步） fuzzy:模糊程度 0-1
 - (void)imageFuzzy:(CGFloat)fuzzy block:(void(^)(UIImage *fuzzyImage))block;
 
 @end

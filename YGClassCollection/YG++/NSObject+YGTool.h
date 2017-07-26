@@ -10,9 +10,13 @@
 
 @interface NSObject (YGTool)
 
-#pragma mark - Array
+#pragma mark - 数组排序
 ///根据数组内对象某个key的值 将数组内数据进行分类 @[@[obj],@[obj]]
 - (NSArray *)classificationWithKey:(NSString *)key;
+///冒泡排序 从小到大
+- (NSMutableArray *)sortASWithKey:(NSString *)key;
+///冒泡排序 从大到小
+- (NSMutableArray *)sortDesWithKey:(NSString *)key;
 
 #pragma mark - 判断类
 ///对象是否为空
@@ -39,12 +43,15 @@
 ///获得所有属性名称和值
 - (NSDictionary *)allPropertiesAndValue;
 
-///类型转换
+#pragma mark - 数据转换
+//注意：xml字符串暂时不能转换成json字符串 json字符串能直接转换为xml字符串
+//json解析
 - (id)jsonObject;
 - (NSData *)jsonData;
 - (NSString *)jsonString;
 
-///对数据进行安全处理返回为字符串 可防止使用到NSNull而发生崩溃的情况
+///类型转换 XML
+- (NSString *)xmlString;
 - (NSString *)formatString;
 
 ///对象转模型
