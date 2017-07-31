@@ -7,6 +7,7 @@
 //
 
 #import "NSString+YGTool.h"
+#import "NSObject+YGTool.h"
 
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
@@ -136,7 +137,7 @@
 
 ///是否全部是空格
 - (BOOL)isAllWhiteSpace{
-    if ([self isNullString]) {
+    if ([self isNullObject]) {
         return YES;
     }
     
@@ -151,7 +152,7 @@
 
 //是否符合正则条件
 - (BOOL)regexMatch:(NSString *)regexString{
-    if ([self isNullString]) {
+    if ([self isNullObject]) {
         return NO;
     }
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString];
@@ -247,7 +248,7 @@
 //string中是否存在Emoji表情
 - (BOOL)isContainsEmoji{
     
-    if ([self isNullString]) return NO;
+    if ([self isNullObject]) return NO;
     
     __block BOOL returnValue = NO;
     [self enumerateSubstringsInRange:NSMakeRange(0, [self length]) options:NSStringEnumerationByComposedCharacterSequences usingBlock:

@@ -18,6 +18,8 @@
 ///冒泡排序 从大到小
 - (NSMutableArray *)sortDesWithKey:(NSString *)key;
 
+- (id)performSelector:(SEL)selector withObjects:(NSArray *)objects;
+
 #pragma mark - 判断类
 ///对象是否为空
 - (BOOL)isNullObject;
@@ -69,7 +71,7 @@
 ///替换关键属性名   return @{@"ID":@"id"};
 + (NSDictionary *)replacedKeyFromPropertyName;
 
-#pragma mark - 数据持久化
+#pragma mark - 归档
 + (instancetype)modelDataInFileName:(NSString *)fileName;
 - (BOOL)saveValuesInFileName:(NSString *)fileName;
 + (void)removeObjInFileName:(NSString *)fileName;

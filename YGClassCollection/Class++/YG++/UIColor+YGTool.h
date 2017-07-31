@@ -35,7 +35,5 @@
 - (UIColor *)transparentColor:(CGFloat)transparent;
 //获得颜色RGB的值
 - (NSDictionary *)colorRGB;
-//获得颜色RGB的值
-- (id)colorRGBinCGFlot;
 
 @end

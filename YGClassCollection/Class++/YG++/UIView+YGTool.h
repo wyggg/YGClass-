@@ -72,7 +72,6 @@
 ///移除角标
 - (void)removeNumBar;
 
-
 ///添加模糊
 - (void)addFuzzyViewStype:(UIBlurEffectStyle)stype animate:(BOOL)animate;
 ///移除模糊

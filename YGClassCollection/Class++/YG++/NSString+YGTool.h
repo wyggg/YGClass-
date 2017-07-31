@@ -11,12 +11,12 @@
 
 @interface NSString (YGTool)
 
-#pragma mark - 类型转换
+#pragma mark - 转换
 @property (nonatomic, weak, readonly) NSURL *URL;
 @property (nonatomic, weak, readonly) UIImage *image;
 @property (nonatomic, weak, readonly) NSData *dataUTF8;
 
-#pragma makr - 数据加密
+#pragma mark - 加密
 @property (nonatomic, weak, readonly) NSString *base64Encode;
 @property (nonatomic, weak, readonly) NSString *base64Decode;
 @property (nonatomic, weak, readonly) NSString *md5String;

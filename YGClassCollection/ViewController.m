@@ -33,7 +33,7 @@
                           @"key3":@"333",
                           @"key4":@"444",};
     
-    NSLog(@"%@",[[dic xmlString] jsonData]);
+    NSLog(@"%@",[dic jsonString]);
     
 //    UIButton *button = [[UIButton alloc] init];
 //    [button setTitle:@"按钮重复点击测试" forState:0];
