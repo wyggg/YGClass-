@@ -22,7 +22,7 @@
 
 ///生成图片
 - (UIImage *)image{
-    if ([self isNullString]) {
+    if (![NSString isStringThereAre:self]) {
         return nil;
     }
     return [UIImage imageNamed:self];
@@ -35,7 +35,7 @@
 
 ///Base64编码
 - (NSString *)base64Encode{
-    if ([self isNullString]) {
+    if (![NSString isStringThereAre:self]) {
         return nil;
     }
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
@@ -44,7 +44,7 @@
 
 ///Base64解码
 - (NSString *)base64Decode{
-    if ([self isNullString]) {
+    if (![NSString isStringThereAre:self]) {
         return nil;
     }
     NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:0];
@@ -65,20 +65,17 @@
 
 
 ///是否为空
-- (BOOL)isNullString{
-    if (self==nil) {
-        return YES;
++ (BOOL)isStringThereAre:(NSString *)string{
+    if (string==nil) {
+        return NO;
     }
-    if (self.length==0) {
-        return YES;
+    if (string.length==0) {
+        return NO;
     }
-    if ([[NSString stringWithFormat:@"%@",self] isEqualToString:@"<null>"]) {
-        return YES;
+    if ([string isKindOfClass:[NSNull class]]) {
+        return NO;
     }
-    if ([self isKindOfClass:[NSNull class]]) {
-        return YES;
-    }
-    return NO;
+    return YES;
 }
 
 ///textfile只能输入价格
@@ -137,8 +134,8 @@
 
 ///是否全部是空格
 - (BOOL)isAllWhiteSpace{
-    if ([self isNullObject]) {
-        return YES;
+    if (![NSString isStringThereAre:self]) {
+        return nil;
     }
     
     NSString *trimString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -152,11 +149,17 @@
 
 //是否符合正则条件
 - (BOOL)regexMatch:(NSString *)regexString{
-    if ([self isNullObject]) {
-        return NO;
+    if (![NSString isStringThereAre:self]) {
+        return nil;
     }
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString];
     return [emailTest evaluateWithObject:self];
+}
+
+///只包含数字和字母是否
+- (BOOL)isOnlyNumAndLetter{
+    NSString *regex = @"[a-z][A-Z][0-9]";
+    return [self regexMatch:regex];
 }
 
 ///是否是邮箱
@@ -248,7 +251,9 @@
 //string中是否存在Emoji表情
 - (BOOL)isContainsEmoji{
     
-    if ([self isNullObject]) return NO;
+    if (![NSString isStringThereAre:self]) {
+        return NO;
+    }
     
     __block BOOL returnValue = NO;
     [self enumerateSubstringsInRange:NSMakeRange(0, [self length]) options:NSStringEnumerationByComposedCharacterSequences usingBlock:
@@ -301,7 +306,7 @@
 
 ///计算字符串size
 - (CGSize)textSize:(CGSize)size fontSize:(CGFloat)fontSize{
-    if ([self isNullString]) {
+    if (![NSString isStringThereAre:self]) {
         return CGSizeMake(0, 0);
     }
     UIFont *font = [UIFont systemFontOfSize:fontSize];

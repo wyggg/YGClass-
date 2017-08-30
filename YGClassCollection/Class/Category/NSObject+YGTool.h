@@ -17,12 +17,18 @@
 - (NSMutableArray *)sortASWithKey:(NSString *)key;
 ///冒泡排序 从大到小
 - (NSMutableArray *)sortDesWithKey:(NSString *)key;
-
+///取一组对象中某个值 单独组成数组
+- (NSMutableArray <NSString *>*)stringArrayWithKey:(NSString *)key;
+///将一组字符串数组合并为一个string用符号隔开
+- (NSString *)mergeString:(NSString *)string;
+///忽略序列 判断数组中数据是否完全相同 (只能判断字符串)
+- (BOOL)isSameArray:(NSArray <NSString *>*)array;
+///performSelector方法传递多参数
 - (id)performSelector:(SEL)selector withObjects:(NSArray *)objects;
 
 #pragma mark - 判断类
-///对象是否为空
-- (BOOL)isNullObject;
+///对象是否存在（不为空）
++ (BOOL)isObjectThereAre:(NSObject *)obj;
 ///获得包含所有基础类的数组
 + (NSArray *)foundationClasses;
 ///判断本类是否为基础类 NSString、NSNumber等...

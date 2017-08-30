@@ -23,6 +23,7 @@
 
 @end
 
+///复用的无限滚动视图
 @interface iSuperScrollElves : UIView
 
 @property (nonatomic, weak) id <iSuperScrollElvesDataSource>dataSource;

@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "SDWebImageManager.h"
 
-///让sdwebimage支持gif
+///让sdwebimage 3.0 以后的版本 支持gif
 @interface UIImage (YG_SDGIF)
 
 ///下载一张图片 自动缓存
 + (void)yg_cacheDownloadImage:(NSURL *)imageUrl
-                          options:(SDWebImageDownloaderOptions)options
-                         progress:(SDWebImageDownloaderProgressBlock)progressBlock
-                        completed:(SDWebImageDownloaderCompletedBlock)completedBlock;
+                      options:(SDWebImageDownloaderOptions)options
+                     progress:(SDWebImageDownloaderProgressBlock)progressBlock
+                    completed:(SDWebImageDownloaderCompletedBlock)completedBlock;
 
 @end

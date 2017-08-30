@@ -26,8 +26,8 @@
 ///控制只能输入价格
 + (BOOL)validateNumber:(NSString*)number text:(NSString *)textFieldText floatCount:(NSInteger)floatCount;
 
-///是否为空
-- (BOOL)isNullString;
+///是否存在（不为Null）
++ (BOOL)isStringThereAre:(NSString *)string;
 
 ///是否全部是空格
 - (BOOL)isAllWhiteSpace;
@@ -35,8 +35,12 @@
 ///过滤全部空格
 - (NSString *)removeAllSpace;
 
+
 ///使用正则判断字符串
 - (BOOL)regexMatch:(NSString *)regexString;
+
+///只包含数字和字母是否
+- (BOOL)isOnlyNumAndLetter;
 
 ///是否是邮箱
 - (BOOL)isEmail;

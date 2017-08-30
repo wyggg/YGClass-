@@ -80,7 +80,7 @@
 }
 
 - (NSString *)formatString{
-    if ([self isNullObject]) {
+    if (![NSObject isObjectThereAre:self]) {
         return @"";
     }
     return [NSString stringWithFormat:@"%@",self];
@@ -190,6 +190,100 @@
     return sortArray;
 }
 
+- (NSMutableArray <NSString *>*)stringArrayWithKey:(NSString *)key{
+    
+    if ([self isKindOfClass:[NSArray class]] == NO) {
+        return nil;
+    }
+    NSMutableArray *mArray = [NSMutableArray array];
+    for (id obj in (NSArray *)self) {
+        id str = [obj valueForKeyPath:key];
+        if (str) {
+            [mArray addObject:str];
+        }else{
+            [mArray addObject:[NSNull null]];
+        }
+    }
+    return mArray;
+}
+
+- (NSString *)mergeString:(NSString *)string{
+    if ([self isKindOfClass:[NSArray class]] == NO) {
+        return nil;
+    }
+    
+    NSMutableString *mString = [NSMutableString string];
+    for (NSString *str in (NSArray *)self) {
+        
+        if ([str isKindOfClass:[NSString class]]) {
+            
+            [mString appendString:str];
+            if (str!=[(NSArray *)self lastObject]) {
+                [mString appendString:string];
+            }
+        }
+    }
+    return [mString copy];
+}
+
+
+//判断数据是否相同
+- (BOOL)isSameArray:(NSArray <NSString *>*)array{
+    if (![self isKindOfClass:[NSArray class]]) {
+        return false;
+    }
+    NSArray *array1 = (NSArray *)self;
+    NSArray *array2 = array;
+    bool bol = false;
+    
+    //创建俩新的数组
+    NSMutableArray *oldArr = [NSMutableArray arrayWithArray:array1];
+    NSMutableArray *newArr = [NSMutableArray arrayWithArray:array2];
+    
+    //对数组1排序。
+    [oldArr sortUsingComparator:^NSComparisonResult(id obj1, id obj2){
+        return obj1 > obj2;
+    }];
+    
+    ////上个排序好像不起作用，应采用下面这个
+    [oldArr sortUsingComparator:^NSComparisonResult(id obj1, id obj2){return [obj1 localizedStandardCompare: obj2];}];
+    
+    //对数组2排序。
+    [newArr sortUsingComparator:^NSComparisonResult(id obj1, id obj2){
+        return obj1 > obj2;
+    }];
+    ////上个排序好像不起作用，应采用下面这个
+    [newArr sortUsingComparator:^NSComparisonResult(id obj1, id obj2){return [obj1 localizedStandardCompare: obj2];}];
+    
+    
+    if (newArr.count == oldArr.count) {
+        
+        bol = true;
+        for (int16_t i = 0; i < oldArr.count; i++) {
+            
+            id c1 = [oldArr objectAtIndex:i];
+            id newc = [newArr objectAtIndex:i];
+            
+            if (![newc isEqualToString:c1]) {
+                bol = false;
+                break;
+            }
+        }
+    }
+    
+    if (bol) {
+        NSLog(@"两个数组的内容相同！");
+    }
+    else {
+        NSLog(@"两个数组的内容不相同！");
+    }
+    
+    return bol;
+    
+}
+
+
+
 - (id)performSelector:(SEL)selector withObjects:(NSArray *)objects
 {
     // 方法签名(方法的描述)
@@ -227,21 +321,21 @@
 
 #pragma mark - 判断
 
-//对象是否为空
-- (BOOL)isNullObject{
-    if ([self.class isKindOfClass:[NSNull class]]) {
-        return YES;
+//对象是否不为空
++ (BOOL)isObjectThereAre:(NSObject *)obj{
+    if ([obj.class isKindOfClass:[NSNull class]]) {
+        return NO;
     }
-    if ([[NSString stringWithFormat:@"%@",self] isEqualToString:@"<null>"]) {
-        return YES;
+    if ([[NSString stringWithFormat:@"%@",obj] isEqualToString:@"<null>"]) {
+        return NO;
     }
-    if ([NSString stringWithFormat:@"%@",self].length==0) {
-        return YES;
+    if ([NSString stringWithFormat:@"%@",obj].length==0) {
+        return NO;
     }
-    if (self==nil) {
-        return YES;
+    if (obj==nil) {
+        return NO;
     }
-    return NO;
+    return YES;
 }
 
 //获得包含所有基础类的数组
@@ -287,7 +381,7 @@
 ///过滤字典在中所有的空值
 - (NSDictionary *)removeAllNullInDic{
     
-    if ([self isNullObject]) {
+    if (![NSObject isObjectThereAre:self]) {
         return @{};
     }
     if (![self isKindOfClass:[NSDictionary class]]) {
@@ -315,7 +409,7 @@
 
 ///过滤数组中所有的空值
 - (NSArray *)removeAllNullInArray{
-    if ([self isNullObject]) {
+    if (![NSObject isObjectThereAre:self]) {
         return @[];
     }
     if (![self isKindOfClass:[NSArray class]]) {
@@ -631,7 +725,6 @@
             [modelViluesArray addObject:[obj dicValues]];
         }
         
-
     }
     
     return modelViluesArray.copy;
