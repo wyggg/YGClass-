@@ -35,11 +35,10 @@
 ///过滤全部空格
 - (NSString *)removeAllSpace;
 
-
 ///使用正则判断字符串
 - (BOOL)regexMatch:(NSString *)regexString;
 
-///只包含数字和字母是否
+///只包含数字和字母
 - (BOOL)isOnlyNumAndLetter;
 
 ///是否是邮箱

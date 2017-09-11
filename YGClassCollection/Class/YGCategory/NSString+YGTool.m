@@ -156,7 +156,7 @@
     return [emailTest evaluateWithObject:self];
 }
 
-///只包含数字和字母是否
+///只包含数字和字母
 - (BOOL)isOnlyNumAndLetter{
     NSString *regex = @"[a-z][A-Z][0-9]";
     return [self regexMatch:regex];
@@ -218,7 +218,7 @@
 - (NSString*)getSecrectPhoneString{
     if (![self isPhone]) {
         NSLog(@"不是手机号");
-        return self;
+        return @"";
     }
     
     NSMutableString *newStr = [NSMutableString stringWithString:self];
@@ -238,7 +238,7 @@
 {
     if (![self isBankCardNumber]) {
         NSLog(@"不是银行卡号");
-        return self;
+        return @"";
     }
     NSMutableString *newStr = [NSMutableString stringWithString:self];
     NSRange range = NSMakeRange(4, 8);

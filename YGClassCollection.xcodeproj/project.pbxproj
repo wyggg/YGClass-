@@ -20,19 +20,19 @@
 		D5E2EC851D89271F0055512B /* YGView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E2EC841D89271F0055512B /* YGView.xib */; };
 		D5E7CC201D7FE79100F00676 /* YGObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E7CC1F1D7FE79100F00676 /* YGObjectModel.m */; };
 		D5E7CC231D7FEE8A00F00676 /* YGObjectModelTow.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E7CC221D7FEE8A00F00676 /* YGObjectModelTow.m */; };
-		D8506DE11F5560EC004F228D /* NSAttributedString+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DAB1F5560EC004F228D /* NSAttributedString+YGTool.m */; };
-		D8506DE21F5560EC004F228D /* NSDate+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DAD1F5560EC004F228D /* NSDate+YGTool.m */; };
-		D8506DE31F5560EC004F228D /* NSObject+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DAF1F5560EC004F228D /* NSObject+YGTool.m */; };
-		D8506DE41F5560EC004F228D /* NSString+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DB11F5560EC004F228D /* NSString+YGTool.m */; };
-		D8506DE51F5560EC004F228D /* NSTimer+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DB31F5560EC004F228D /* NSTimer+YGTool.m */; };
-		D8506DE61F5560EC004F228D /* UIButton+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DB51F5560EC004F228D /* UIButton+YGTool.m */; };
-		D8506DE71F5560EC004F228D /* UIColor+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DB71F5560EC004F228D /* UIColor+YGTool.m */; };
-		D8506DE81F5560EC004F228D /* UIControl+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DB91F5560EC004F228D /* UIControl+YGTool.m */; };
-		D8506DE91F5560EC004F228D /* UIImage+YG_SDGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DBB1F5560EC004F228D /* UIImage+YG_SDGIF.m */; };
-		D8506DEA1F5560EC004F228D /* UIImage+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DBD1F5560EC004F228D /* UIImage+YGTool.m */; };
-		D8506DEB1F5560EC004F228D /* UIView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DBF1F5560EC004F228D /* UIView+YGTool.m */; };
-		D8506DEC1F5560EC004F228D /* UIWebView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DC11F5560EC004F228D /* UIWebView+YGTool.m */; };
-		D8506DED1F5560EC004F228D /* WKWebView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DC31F5560EC004F228D /* WKWebView+YGTool.m */; };
+		D812CBDE1F66DC550078373C /* NSAttributedString+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBC31F66DC550078373C /* NSAttributedString+YGTool.m */; };
+		D812CBDF1F66DC550078373C /* NSDate+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBC51F66DC550078373C /* NSDate+YGTool.m */; };
+		D812CBE01F66DC550078373C /* NSObject+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBC71F66DC550078373C /* NSObject+YGTool.m */; };
+		D812CBE11F66DC550078373C /* NSString+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBC91F66DC550078373C /* NSString+YGTool.m */; };
+		D812CBE21F66DC550078373C /* NSTimer+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBCB1F66DC550078373C /* NSTimer+YGTool.m */; };
+		D812CBE31F66DC550078373C /* UIButton+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBCD1F66DC550078373C /* UIButton+YGTool.m */; };
+		D812CBE41F66DC550078373C /* UIColor+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBCF1F66DC550078373C /* UIColor+YGTool.m */; };
+		D812CBE51F66DC550078373C /* UIControl+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBD11F66DC550078373C /* UIControl+YGTool.m */; };
+		D812CBE61F66DC550078373C /* UIImage+YG_SDGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBD31F66DC550078373C /* UIImage+YG_SDGIF.m */; };
+		D812CBE71F66DC550078373C /* UIImage+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBD51F66DC550078373C /* UIImage+YGTool.m */; };
+		D812CBE81F66DC550078373C /* UIView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBD71F66DC550078373C /* UIView+YGTool.m */; };
+		D812CBE91F66DC550078373C /* UIWebView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBD91F66DC550078373C /* UIWebView+YGTool.m */; };
+		D812CBEA1F66DC550078373C /* WKWebView+YGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D812CBDB1F66DC550078373C /* WKWebView+YGTool.m */; };
 		D8506DEE1F5560EC004F228D /* iSuperScrollElves.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DC91F5560EC004F228D /* iSuperScrollElves.m */; };
 		D8506DEF1F5560EC004F228D /* SXNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DCC1F5560EC004F228D /* SXNavigationView.m */; };
 		D8506DF01F5560EC004F228D /* SXIconAndTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DCF1F5560EC004F228D /* SXIconAndTitleCell.m */; };
@@ -67,34 +67,34 @@
 		D5E7CC1F1D7FE79100F00676 /* YGObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGObjectModel.m; sourceTree = "<group>"; };
 		D5E7CC211D7FEE8A00F00676 /* YGObjectModelTow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGObjectModelTow.h; sourceTree = "<group>"; };
 		D5E7CC221D7FEE8A00F00676 /* YGObjectModelTow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGObjectModelTow.m; sourceTree = "<group>"; };
-		D8506DAA1F5560EC004F228D /* NSAttributedString+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YGTool.h"; sourceTree = "<group>"; };
-		D8506DAB1F5560EC004F228D /* NSAttributedString+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YGTool.m"; sourceTree = "<group>"; };
-		D8506DAC1F5560EC004F228D /* NSDate+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YGTool.h"; sourceTree = "<group>"; };
-		D8506DAD1F5560EC004F228D /* NSDate+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YGTool.m"; sourceTree = "<group>"; };
-		D8506DAE1F5560EC004F228D /* NSObject+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YGTool.h"; sourceTree = "<group>"; };
-		D8506DAF1F5560EC004F228D /* NSObject+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YGTool.m"; sourceTree = "<group>"; };
-		D8506DB01F5560EC004F228D /* NSString+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YGTool.h"; sourceTree = "<group>"; };
-		D8506DB11F5560EC004F228D /* NSString+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YGTool.m"; sourceTree = "<group>"; };
-		D8506DB21F5560EC004F228D /* NSTimer+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YGTool.h"; sourceTree = "<group>"; };
-		D8506DB31F5560EC004F228D /* NSTimer+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YGTool.m"; sourceTree = "<group>"; };
-		D8506DB41F5560EC004F228D /* UIButton+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YGTool.h"; sourceTree = "<group>"; };
-		D8506DB51F5560EC004F228D /* UIButton+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YGTool.m"; sourceTree = "<group>"; };
-		D8506DB61F5560EC004F228D /* UIColor+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YGTool.h"; sourceTree = "<group>"; };
-		D8506DB71F5560EC004F228D /* UIColor+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YGTool.m"; sourceTree = "<group>"; };
-		D8506DB81F5560EC004F228D /* UIControl+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YGTool.h"; sourceTree = "<group>"; };
-		D8506DB91F5560EC004F228D /* UIControl+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YGTool.m"; sourceTree = "<group>"; };
-		D8506DBA1F5560EC004F228D /* UIImage+YG_SDGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YG_SDGIF.h"; sourceTree = "<group>"; };
-		D8506DBB1F5560EC004F228D /* UIImage+YG_SDGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YG_SDGIF.m"; sourceTree = "<group>"; };
-		D8506DBC1F5560EC004F228D /* UIImage+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YGTool.h"; sourceTree = "<group>"; };
-		D8506DBD1F5560EC004F228D /* UIImage+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YGTool.m"; sourceTree = "<group>"; };
-		D8506DBE1F5560EC004F228D /* UIView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGTool.h"; sourceTree = "<group>"; };
-		D8506DBF1F5560EC004F228D /* UIView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGTool.m"; sourceTree = "<group>"; };
-		D8506DC01F5560EC004F228D /* UIWebView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YGTool.h"; sourceTree = "<group>"; };
-		D8506DC11F5560EC004F228D /* UIWebView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YGTool.m"; sourceTree = "<group>"; };
-		D8506DC21F5560EC004F228D /* WKWebView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+YGTool.h"; sourceTree = "<group>"; };
-		D8506DC31F5560EC004F228D /* WKWebView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+YGTool.m"; sourceTree = "<group>"; };
-		D8506DC41F5560EC004F228D /* YGClassCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGClassCollection.h; sourceTree = "<group>"; };
-		D8506DC51F5560EC004F228D /* YGObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGObjectModel.h; sourceTree = "<group>"; };
+		D812CBC21F66DC550078373C /* NSAttributedString+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YGTool.h"; sourceTree = "<group>"; };
+		D812CBC31F66DC550078373C /* NSAttributedString+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YGTool.m"; sourceTree = "<group>"; };
+		D812CBC41F66DC550078373C /* NSDate+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YGTool.h"; sourceTree = "<group>"; };
+		D812CBC51F66DC550078373C /* NSDate+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YGTool.m"; sourceTree = "<group>"; };
+		D812CBC61F66DC550078373C /* NSObject+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YGTool.h"; sourceTree = "<group>"; };
+		D812CBC71F66DC550078373C /* NSObject+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YGTool.m"; sourceTree = "<group>"; };
+		D812CBC81F66DC550078373C /* NSString+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YGTool.h"; sourceTree = "<group>"; };
+		D812CBC91F66DC550078373C /* NSString+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YGTool.m"; sourceTree = "<group>"; };
+		D812CBCA1F66DC550078373C /* NSTimer+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YGTool.h"; sourceTree = "<group>"; };
+		D812CBCB1F66DC550078373C /* NSTimer+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YGTool.m"; sourceTree = "<group>"; };
+		D812CBCC1F66DC550078373C /* UIButton+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YGTool.h"; sourceTree = "<group>"; };
+		D812CBCD1F66DC550078373C /* UIButton+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YGTool.m"; sourceTree = "<group>"; };
+		D812CBCE1F66DC550078373C /* UIColor+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YGTool.h"; sourceTree = "<group>"; };
+		D812CBCF1F66DC550078373C /* UIColor+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YGTool.m"; sourceTree = "<group>"; };
+		D812CBD01F66DC550078373C /* UIControl+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YGTool.h"; sourceTree = "<group>"; };
+		D812CBD11F66DC550078373C /* UIControl+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YGTool.m"; sourceTree = "<group>"; };
+		D812CBD21F66DC550078373C /* UIImage+YG_SDGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YG_SDGIF.h"; sourceTree = "<group>"; };
+		D812CBD31F66DC550078373C /* UIImage+YG_SDGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YG_SDGIF.m"; sourceTree = "<group>"; };
+		D812CBD41F66DC550078373C /* UIImage+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YGTool.h"; sourceTree = "<group>"; };
+		D812CBD51F66DC550078373C /* UIImage+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YGTool.m"; sourceTree = "<group>"; };
+		D812CBD61F66DC550078373C /* UIView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGTool.h"; sourceTree = "<group>"; };
+		D812CBD71F66DC550078373C /* UIView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGTool.m"; sourceTree = "<group>"; };
+		D812CBD81F66DC550078373C /* UIWebView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+YGTool.h"; sourceTree = "<group>"; };
+		D812CBD91F66DC550078373C /* UIWebView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+YGTool.m"; sourceTree = "<group>"; };
+		D812CBDA1F66DC550078373C /* WKWebView+YGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+YGTool.h"; sourceTree = "<group>"; };
+		D812CBDB1F66DC550078373C /* WKWebView+YGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+YGTool.m"; sourceTree = "<group>"; };
+		D812CBDC1F66DC550078373C /* YGClassCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGClassCollection.h; sourceTree = "<group>"; };
+		D812CBDD1F66DC550078373C /* YGObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGObjectModel.h; sourceTree = "<group>"; };
 		D8506DC81F5560EC004F228D /* iSuperScrollElves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSuperScrollElves.h; sourceTree = "<group>"; };
 		D8506DC91F5560EC004F228D /* iSuperScrollElves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSuperScrollElves.m; sourceTree = "<group>"; };
 		D8506DCB1F5560EC004F228D /* SXNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXNavigationView.h; sourceTree = "<group>"; };
@@ -205,48 +205,48 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		D812CBC11F66DC550078373C /* YGCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D812CBC21F66DC550078373C /* NSAttributedString+YGTool.h */,
+				D812CBC31F66DC550078373C /* NSAttributedString+YGTool.m */,
+				D812CBC41F66DC550078373C /* NSDate+YGTool.h */,
+				D812CBC51F66DC550078373C /* NSDate+YGTool.m */,
+				D812CBC61F66DC550078373C /* NSObject+YGTool.h */,
+				D812CBC71F66DC550078373C /* NSObject+YGTool.m */,
+				D812CBC81F66DC550078373C /* NSString+YGTool.h */,
+				D812CBC91F66DC550078373C /* NSString+YGTool.m */,
+				D812CBCA1F66DC550078373C /* NSTimer+YGTool.h */,
+				D812CBCB1F66DC550078373C /* NSTimer+YGTool.m */,
+				D812CBCC1F66DC550078373C /* UIButton+YGTool.h */,
+				D812CBCD1F66DC550078373C /* UIButton+YGTool.m */,
+				D812CBCE1F66DC550078373C /* UIColor+YGTool.h */,
+				D812CBCF1F66DC550078373C /* UIColor+YGTool.m */,
+				D812CBD01F66DC550078373C /* UIControl+YGTool.h */,
+				D812CBD11F66DC550078373C /* UIControl+YGTool.m */,
+				D812CBD21F66DC550078373C /* UIImage+YG_SDGIF.h */,
+				D812CBD31F66DC550078373C /* UIImage+YG_SDGIF.m */,
+				D812CBD41F66DC550078373C /* UIImage+YGTool.h */,
+				D812CBD51F66DC550078373C /* UIImage+YGTool.m */,
+				D812CBD61F66DC550078373C /* UIView+YGTool.h */,
+				D812CBD71F66DC550078373C /* UIView+YGTool.m */,
+				D812CBD81F66DC550078373C /* UIWebView+YGTool.h */,
+				D812CBD91F66DC550078373C /* UIWebView+YGTool.m */,
+				D812CBDA1F66DC550078373C /* WKWebView+YGTool.h */,
+				D812CBDB1F66DC550078373C /* WKWebView+YGTool.m */,
+				D812CBDC1F66DC550078373C /* YGClassCollection.h */,
+				D812CBDD1F66DC550078373C /* YGObjectModel.h */,
+			);
+			path = YGCategory;
+			sourceTree = "<group>";
+		};
 		D8506DA81F5560EC004F228D /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				D8506DA91F5560EC004F228D /* Category */,
+				D812CBC11F66DC550078373C /* YGCategory */,
 				D8506DC61F5560EC004F228D /* UI */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		D8506DA91F5560EC004F228D /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				D8506DAA1F5560EC004F228D /* NSAttributedString+YGTool.h */,
-				D8506DAB1F5560EC004F228D /* NSAttributedString+YGTool.m */,
-				D8506DAC1F5560EC004F228D /* NSDate+YGTool.h */,
-				D8506DAD1F5560EC004F228D /* NSDate+YGTool.m */,
-				D8506DAE1F5560EC004F228D /* NSObject+YGTool.h */,
-				D8506DAF1F5560EC004F228D /* NSObject+YGTool.m */,
-				D8506DB01F5560EC004F228D /* NSString+YGTool.h */,
-				D8506DB11F5560EC004F228D /* NSString+YGTool.m */,
-				D8506DB21F5560EC004F228D /* NSTimer+YGTool.h */,
-				D8506DB31F5560EC004F228D /* NSTimer+YGTool.m */,
-				D8506DB41F5560EC004F228D /* UIButton+YGTool.h */,
-				D8506DB51F5560EC004F228D /* UIButton+YGTool.m */,
-				D8506DB61F5560EC004F228D /* UIColor+YGTool.h */,
-				D8506DB71F5560EC004F228D /* UIColor+YGTool.m */,
-				D8506DB81F5560EC004F228D /* UIControl+YGTool.h */,
-				D8506DB91F5560EC004F228D /* UIControl+YGTool.m */,
-				D8506DBA1F5560EC004F228D /* UIImage+YG_SDGIF.h */,
-				D8506DBB1F5560EC004F228D /* UIImage+YG_SDGIF.m */,
-				D8506DBC1F5560EC004F228D /* UIImage+YGTool.h */,
-				D8506DBD1F5560EC004F228D /* UIImage+YGTool.m */,
-				D8506DBE1F5560EC004F228D /* UIView+YGTool.h */,
-				D8506DBF1F5560EC004F228D /* UIView+YGTool.m */,
-				D8506DC01F5560EC004F228D /* UIWebView+YGTool.h */,
-				D8506DC11F5560EC004F228D /* UIWebView+YGTool.m */,
-				D8506DC21F5560EC004F228D /* WKWebView+YGTool.h */,
-				D8506DC31F5560EC004F228D /* WKWebView+YGTool.m */,
-				D8506DC41F5560EC004F228D /* YGClassCollection.h */,
-				D8506DC51F5560EC004F228D /* YGObjectModel.h */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		D8506DC61F5560EC004F228D /* UI */ = {
@@ -457,33 +457,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8506DE81F5560EC004F228D /* UIControl+YGTool.m in Sources */,
-				D8506DED1F5560EC004F228D /* WKWebView+YGTool.m in Sources */,
 				D8506DF51F5560EC004F228D /* InputView.m in Sources */,
-				D8506DEA1F5560EC004F228D /* UIImage+YGTool.m in Sources */,
 				D8506DF31F5560EC004F228D /* YGImageContentView.m in Sources */,
-				D8506DE91F5560EC004F228D /* UIImage+YG_SDGIF.m in Sources */,
+				D812CBDF1F66DC550078373C /* NSDate+YGTool.m in Sources */,
+				D812CBE51F66DC550078373C /* UIControl+YGTool.m in Sources */,
+				D812CBE41F66DC550078373C /* UIColor+YGTool.m in Sources */,
+				D812CBE31F66DC550078373C /* UIButton+YGTool.m in Sources */,
+				D812CBE11F66DC550078373C /* NSString+YGTool.m in Sources */,
+				D812CBE91F66DC550078373C /* UIWebView+YGTool.m in Sources */,
+				D812CBE61F66DC550078373C /* UIImage+YG_SDGIF.m in Sources */,
 				D8506DF01F5560EC004F228D /* SXIconAndTitleCell.m in Sources */,
+				D812CBDE1F66DC550078373C /* NSAttributedString+YGTool.m in Sources */,
 				D5B1D1F81D62BCF50081B847 /* ViewController.m in Sources */,
 				D5E7CC201D7FE79100F00676 /* YGObjectModel.m in Sources */,
 				D8506DF71F5560EC004F228D /* YGPagesView.m in Sources */,
+				D812CBE71F66DC550078373C /* UIImage+YGTool.m in Sources */,
 				D5E7CC231D7FEE8A00F00676 /* YGObjectModelTow.m in Sources */,
-				D8506DE41F5560EC004F228D /* NSString+YGTool.m in Sources */,
-				D8506DE11F5560EC004F228D /* NSAttributedString+YGTool.m in Sources */,
-				D8506DE21F5560EC004F228D /* NSDate+YGTool.m in Sources */,
 				D8506DEE1F5560EC004F228D /* iSuperScrollElves.m in Sources */,
+				D812CBE01F66DC550078373C /* NSObject+YGTool.m in Sources */,
 				D8506DF41F5560EC004F228D /* YGImageModel.m in Sources */,
-				D8506DE31F5560EC004F228D /* NSObject+YGTool.m in Sources */,
+				D812CBEA1F66DC550078373C /* WKWebView+YGTool.m in Sources */,
 				D8506DF61F5560EC004F228D /* NumberChooseView.m in Sources */,
-				D8506DEC1F5560EC004F228D /* UIWebView+YGTool.m in Sources */,
 				D8506DF11F5560EC004F228D /* YGImageContentItemCell.m in Sources */,
-				D8506DE61F5560EC004F228D /* UIButton+YGTool.m in Sources */,
 				D5B1D1F51D62BCF50081B847 /* AppDelegate.m in Sources */,
 				D8506DEF1F5560EC004F228D /* SXNavigationView.m in Sources */,
-				D8506DEB1F5560EC004F228D /* UIView+YGTool.m in Sources */,
-				D8506DE71F5560EC004F228D /* UIColor+YGTool.m in Sources */,
-				D8506DE51F5560EC004F228D /* NSTimer+YGTool.m in Sources */,
 				D5B1D1F21D62BCF50081B847 /* main.m in Sources */,
+				D812CBE81F66DC550078373C /* UIView+YGTool.m in Sources */,
+				D812CBE21F66DC550078373C /* NSTimer+YGTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
