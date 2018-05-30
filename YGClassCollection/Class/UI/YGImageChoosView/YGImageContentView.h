@@ -50,8 +50,8 @@ typedef void(^imageContentViewAddImageBlock)(NSArray <UIImage *>*);
 - (void)installUI;
 
 - (NSArray *)images;
-- (void)setImages:(NSArray *)images;
 
+- (void)setImages:(NSArray *)images;
 - (void)addImages:(NSArray <UIImage *>*)images;
 - (void)removeImage:(UIImage *)image;
 - (void)removeImageInIndex:(NSInteger)index;

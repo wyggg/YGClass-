@@ -2,15 +2,12 @@
 //  SXIconAndTitleCell.m
 //  高薪工资
 //
-//  Created by yggggg on 2017/8/2.
+//  Created by 吴港gggg on 2017/8/2.
 //  Copyright © 2017年 上玄科技. All rights reserved.
 //
 
 #import "SXIconAndTitleCell.h"
 #import <Masonry.h>
-
-///箭头图片的名称
-#define kARROW_IMAGE_NAME @""
 
 @implementation SXIconAndTitleCell
 
@@ -41,6 +38,9 @@
     if (!_switchButton) {
         UISwitch *switchBtn = [[UISwitch alloc] init];
         _switchButton = switchBtn;
+//        _switchButton.tintColor = [UIColor oe_btnRedColor];
+        _switchButton.onTintColor = [UIColor redColor];
+//        _switchButton.thumbTintColor = [UIColor oe_btnRedColor];
         [self.contentView addSubview:switchBtn];
         [switchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.offset(-15);
@@ -50,6 +50,45 @@
         }];
     }
     return _switchButton;
+}
+
+- (UITextField *)textField{
+    if (!_textField) {
+        UITextField *textField = [[UITextField alloc] init];
+        textField.textAlignment = NSTextAlignmentRight;
+        textField.font = [UIFont systemFontOfSize:14];
+        textField.delegate = self;
+        [self.contentView addSubview:textField];
+        _textField = textField;
+        [textField addTarget:self action:@selector(textFieldEditingDidBegin:) forControlEvents:UIControlEventEditingDidBegin];
+        [textField addTarget:self action:@selector(textFieldDidEndEditing:) forControlEvents:UIControlEventEditingDidEnd];
+        [textField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+        [textField mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.offset(-15);
+            make.centerY.offset(0);
+            make.width.equalTo(self.mas_width).multipliedBy(0.4);
+            make.height.equalTo(self.mas_height).multipliedBy(0.7);
+        }];
+    }
+    return _textField;
+}
+
+- (void)textFieldEditingDidBegin:(UITextField *)textField{
+    if (self.textFieldEditingDidBeginBlock) {
+        self.textFieldEditingDidBeginBlock(textField);
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    if (self.textFieldDidEndEditingBlock) {
+        self.textFieldDidEndEditingBlock(textField);
+    }
+}
+
+- (void)textFieldDidChange:(UITextField *)textField{
+    if (self.textFieldDidChangeBlock) {
+        self.textFieldDidChangeBlock(textField);
+    }
 }
 
 - (void)loadUI{
@@ -73,7 +112,7 @@
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.numberOfLines = 0;
     titleLabel.textColor = [UIColor blackColor];
-    titleLabel.font = [UIFont systemFontOfSize:16];
+    titleLabel.font = [UIFont systemFontOfSize:14];
     self.titleLabel = titleLabel;
     [self.contentView addSubview:titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -99,7 +138,8 @@
 //    aImageView.backgroundColor = [UIColor grayColor];
     [self.contentView addSubview:aImageView];
     [aImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.offset(20);
+        make.width.offset(8);
+        make.height.offset(15);
         make.centerY.offset(0);
         make.right.offset(-15);
     }];
@@ -107,13 +147,14 @@
     UILabel *noteLabel = [[UILabel alloc] init];
     self.noteLabel = noteLabel;
     noteLabel.numberOfLines = 0;
-    noteLabel.textColor = [UIColor lightTextColor];
+    noteLabel.textColor = [UIColor blackColor];
     noteLabel.font = [UIFont systemFontOfSize:12];
     noteLabel.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:noteLabel];
     [noteLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(aImageView.mas_left).offset(-5);
         make.centerY.offset(0);
+        make.left.offset(-15);
     }];
     
 //    [self.contentView addBottomLintH:0.5 color:kColor_LineGray];
@@ -156,14 +197,20 @@
     
     self.aImageView.hidden = _isHiddenArrowImageView;
     if (_isHiddenArrowImageView) {
-        [self.noteLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        
+        [self.aImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(0);
+            make.height.offset(15);
+            make.centerY.offset(0);
             make.right.offset(-15);
-            make.centerY.offset(0);
         }];
+        
     }else{
-        [self.noteLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self.aImageView.mas_left).offset(-5);
+        [self.aImageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.width.offset(8);
+            make.height.offset(15);
             make.centerY.offset(0);
+            make.right.offset(-15);
         }];
     }
 }

@@ -43,6 +43,13 @@
 		D8506DF51F5560EC004F228D /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DDA1F5560EC004F228D /* InputView.m */; };
 		D8506DF61F5560EC004F228D /* NumberChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DDD1F5560EC004F228D /* NumberChooseView.m */; };
 		D8506DF71F5560EC004F228D /* YGPagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8506DE01F5560EC004F228D /* YGPagesView.m */; };
+		D8A77E242008A0B200A7FAC4 /* YGItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E212008A0B200A7FAC4 /* YGItemsView.m */; };
+		D8A77E252008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E222008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.m */; };
+		D8A77E262008A0B200A7FAC4 /* YGItemsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E232008A0B200A7FAC4 /* YGItemsViewCell.m */; };
+		D8A77E302008A13D00A7FAC4 /* YGMp3PlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E282008A13D00A7FAC4 /* YGMp3PlayView.m */; };
+		D8A77E312008A13D00A7FAC4 /* YGMp3PlayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E2A2008A13D00A7FAC4 /* YGMp3PlayDelegate.m */; };
+		D8A77E322008A13D00A7FAC4 /* YGPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E2D2008A13D00A7FAC4 /* YGPlayModel.m */; };
+		D8A77E332008A13D00A7FAC4 /* YGPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A77E2E2008A13D00A7FAC4 /* YGPlayManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +121,20 @@
 		D8506DDD1F5560EC004F228D /* NumberChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberChooseView.m; sourceTree = "<group>"; };
 		D8506DDF1F5560EC004F228D /* YGPagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGPagesView.h; sourceTree = "<group>"; };
 		D8506DE01F5560EC004F228D /* YGPagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGPagesView.m; sourceTree = "<group>"; };
+		D8A77E1E2008A0B200A7FAC4 /* YGItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGItemsView.h; sourceTree = "<group>"; };
+		D8A77E1F2008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGEqualSpaceFlowLayout.h; sourceTree = "<group>"; };
+		D8A77E202008A0B200A7FAC4 /* YGItemsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGItemsViewCell.h; sourceTree = "<group>"; };
+		D8A77E212008A0B200A7FAC4 /* YGItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGItemsView.m; sourceTree = "<group>"; };
+		D8A77E222008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGEqualSpaceFlowLayout.m; sourceTree = "<group>"; };
+		D8A77E232008A0B200A7FAC4 /* YGItemsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGItemsViewCell.m; sourceTree = "<group>"; };
+		D8A77E282008A13D00A7FAC4 /* YGMp3PlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGMp3PlayView.m; sourceTree = "<group>"; };
+		D8A77E292008A13D00A7FAC4 /* YGPlayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGPlayModel.h; sourceTree = "<group>"; };
+		D8A77E2A2008A13D00A7FAC4 /* YGMp3PlayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGMp3PlayDelegate.m; sourceTree = "<group>"; };
+		D8A77E2B2008A13D00A7FAC4 /* YGPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGPlayManager.h; sourceTree = "<group>"; };
+		D8A77E2C2008A13D00A7FAC4 /* YGMp3PlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGMp3PlayView.h; sourceTree = "<group>"; };
+		D8A77E2D2008A13D00A7FAC4 /* YGPlayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGPlayModel.m; sourceTree = "<group>"; };
+		D8A77E2E2008A13D00A7FAC4 /* YGPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGPlayManager.m; sourceTree = "<group>"; };
+		D8A77E2F2008A13D00A7FAC4 /* YGMp3PlayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGMp3PlayDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +226,7 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		D812CBC11F66DC550078373C /* YGCategory */ = {
+		D812CBC11F66DC550078373C /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				D812CBC21F66DC550078373C /* NSAttributedString+YGTool.h */,
@@ -237,13 +258,13 @@
 				D812CBDC1F66DC550078373C /* YGClassCollection.h */,
 				D812CBDD1F66DC550078373C /* YGObjectModel.h */,
 			);
-			path = YGCategory;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		D8506DA81F5560EC004F228D /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				D812CBC11F66DC550078373C /* YGCategory */,
+				D812CBC11F66DC550078373C /* Category */,
 				D8506DC61F5560EC004F228D /* UI */,
 			);
 			path = Class;
@@ -252,6 +273,8 @@
 		D8506DC61F5560EC004F228D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D8A77E272008A13D00A7FAC4 /* YGPlayView */,
+				D8A77E1D2008A0B200A7FAC4 /* YGItemsView */,
 				D8506DC71F5560EC004F228D /* iSuperScrollElvesDemo */,
 				D8506DCA1F5560EC004F228D /* SXNavigationView */,
 				D8506DCD1F5560EC004F228D /* YGIconAndTitleCell */,
@@ -293,11 +316,11 @@
 		D8506DD01F5560EC004F228D /* YGImageChoosView */ = {
 			isa = PBXGroup;
 			children = (
+				D8506DD41F5560EC004F228D /* YGImageContentView.h */,
+				D8506DD51F5560EC004F228D /* YGImageContentView.m */,
 				D8506DD11F5560EC004F228D /* YGImageContentItemCell.h */,
 				D8506DD21F5560EC004F228D /* YGImageContentItemCell.m */,
 				D8506DD31F5560EC004F228D /* YGImageContentItemCell.xib */,
-				D8506DD41F5560EC004F228D /* YGImageContentView.h */,
-				D8506DD51F5560EC004F228D /* YGImageContentView.m */,
 				D8506DD61F5560EC004F228D /* YGImageModel.h */,
 				D8506DD71F5560EC004F228D /* YGImageModel.m */,
 			);
@@ -329,6 +352,34 @@
 				D8506DE01F5560EC004F228D /* YGPagesView.m */,
 			);
 			path = YGPagesView;
+			sourceTree = "<group>";
+		};
+		D8A77E1D2008A0B200A7FAC4 /* YGItemsView */ = {
+			isa = PBXGroup;
+			children = (
+				D8A77E1E2008A0B200A7FAC4 /* YGItemsView.h */,
+				D8A77E1F2008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.h */,
+				D8A77E202008A0B200A7FAC4 /* YGItemsViewCell.h */,
+				D8A77E212008A0B200A7FAC4 /* YGItemsView.m */,
+				D8A77E222008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.m */,
+				D8A77E232008A0B200A7FAC4 /* YGItemsViewCell.m */,
+			);
+			path = YGItemsView;
+			sourceTree = "<group>";
+		};
+		D8A77E272008A13D00A7FAC4 /* YGPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				D8A77E2B2008A13D00A7FAC4 /* YGPlayManager.h */,
+				D8A77E2E2008A13D00A7FAC4 /* YGPlayManager.m */,
+				D8A77E292008A13D00A7FAC4 /* YGPlayModel.h */,
+				D8A77E2D2008A13D00A7FAC4 /* YGPlayModel.m */,
+				D8A77E2F2008A13D00A7FAC4 /* YGMp3PlayDelegate.h */,
+				D8A77E2A2008A13D00A7FAC4 /* YGMp3PlayDelegate.m */,
+				D8A77E2C2008A13D00A7FAC4 /* YGMp3PlayView.h */,
+				D8A77E282008A13D00A7FAC4 /* YGMp3PlayView.m */,
+			);
+			path = YGPlayView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,6 +513,8 @@
 				D812CBDF1F66DC550078373C /* NSDate+YGTool.m in Sources */,
 				D812CBE51F66DC550078373C /* UIControl+YGTool.m in Sources */,
 				D812CBE41F66DC550078373C /* UIColor+YGTool.m in Sources */,
+				D8A77E332008A13D00A7FAC4 /* YGPlayManager.m in Sources */,
+				D8A77E252008A0B200A7FAC4 /* YGEqualSpaceFlowLayout.m in Sources */,
 				D812CBE31F66DC550078373C /* UIButton+YGTool.m in Sources */,
 				D812CBE11F66DC550078373C /* NSString+YGTool.m in Sources */,
 				D812CBE91F66DC550078373C /* UIWebView+YGTool.m in Sources */,
@@ -471,7 +524,10 @@
 				D5B1D1F81D62BCF50081B847 /* ViewController.m in Sources */,
 				D5E7CC201D7FE79100F00676 /* YGObjectModel.m in Sources */,
 				D8506DF71F5560EC004F228D /* YGPagesView.m in Sources */,
+				D8A77E322008A13D00A7FAC4 /* YGPlayModel.m in Sources */,
+				D8A77E312008A13D00A7FAC4 /* YGMp3PlayDelegate.m in Sources */,
 				D812CBE71F66DC550078373C /* UIImage+YGTool.m in Sources */,
+				D8A77E302008A13D00A7FAC4 /* YGMp3PlayView.m in Sources */,
 				D5E7CC231D7FEE8A00F00676 /* YGObjectModelTow.m in Sources */,
 				D8506DEE1F5560EC004F228D /* iSuperScrollElves.m in Sources */,
 				D812CBE01F66DC550078373C /* NSObject+YGTool.m in Sources */,
@@ -479,9 +535,11 @@
 				D812CBEA1F66DC550078373C /* WKWebView+YGTool.m in Sources */,
 				D8506DF61F5560EC004F228D /* NumberChooseView.m in Sources */,
 				D8506DF11F5560EC004F228D /* YGImageContentItemCell.m in Sources */,
+				D8A77E262008A0B200A7FAC4 /* YGItemsViewCell.m in Sources */,
 				D5B1D1F51D62BCF50081B847 /* AppDelegate.m in Sources */,
 				D8506DEF1F5560EC004F228D /* SXNavigationView.m in Sources */,
 				D5B1D1F21D62BCF50081B847 /* main.m in Sources */,
+				D8A77E242008A0B200A7FAC4 /* YGItemsView.m in Sources */,
 				D812CBE81F66DC550078373C /* UIView+YGTool.m in Sources */,
 				D812CBE21F66DC550078373C /* NSTimer+YGTool.m in Sources */,
 			);
